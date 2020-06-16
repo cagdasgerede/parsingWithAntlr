@@ -1,0 +1,29 @@
+http://www.webgraphviz.com/
+
+
+strict graph G {
+  1 [label="s"];
+  2 [label="e"];
+  3 [label="5"];
+  4 [label="+"];
+  5 [label="e"];
+  6 [label="10"];
+  7 [label="+"];
+  8 [label="e"];
+  9 [label="20"];
+  10 [label="+"];
+  11 [label="e"];
+  12 [label="3"];
+
+  1 -- 2;
+  2 -- 3;
+  2 -- 4;
+  2 -- 5;
+  5 -- 6;
+  5 -- 7;
+  5 -- 8;
+  8 -- 9;
+  8 -- 10;
+  8 -- 11;
+  11 -- 12;
+}
