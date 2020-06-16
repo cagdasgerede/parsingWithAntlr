@@ -1,0 +1,21 @@
+Shows printing parse tree via the built-in antlr tool and a custom implementation.
+
+
+Generate java files from the grammar:
+
+    java org.antlr.v4.Tool Hello.g4 -o output
+
+
+Compile Runner class:
+
+    javac Runner.java -cp "./output;%CLASSPATH%" -d output
+
+
+Print parse tree via built-in Tool
+
+    java org.antlr.v4.gui.TestRig Hello r -tree -input ../input.txt
+
+
+Print parse tree using the custom implementation
+
+    cat ../input.txt | java Runner

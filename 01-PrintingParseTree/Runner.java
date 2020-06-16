@@ -1,7 +1,7 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
-public class Test {
+public class Runner {
     public static void main(String[] args) throws Exception {
         CharStream input = CharStreams.fromStream(System.in);
         HelloLexer lexer = new HelloLexer(input);
