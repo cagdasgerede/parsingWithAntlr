@@ -1,6 +1,6 @@
 grammar Expr;
 
-s: e+;
+s: e;
 e: INT '+' e | INT;
 
 INT: [0-9]+;
