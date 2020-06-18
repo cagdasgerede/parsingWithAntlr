@@ -1,6 +1,6 @@
 Generate java files from the grammar (assumeing the grammar file is Hello.g4):
 
-java org.antlr.v4.Tool Hello.g4 -o output
+java org.antlr.v4.Tool Java.g4 -o output
 
 
 Compile Runner class:
@@ -10,7 +10,7 @@ javac Runner.java -cp "./output;%CLASSPATH%" -d output
 
 Print parse tree via built-in Tool (run when inside the "/output" folder) (assuming grammar file name is Hello and the start rule is r)
 
-java org.antlr.v4.gui.TestRig Hello r -tree -input ../input.txt
+java org.antlr.v4.gui.TestRig Java compilationUnit -tree -input ../input.txt
 
 
 Print parse tree using the custom implementation (run when inside the "output" folder)
