@@ -1,0 +1,16 @@
+int main() { a(fact(5)); }
+
+float fact(int n) {
+    print(n);
+
+    if (n==0) then return 1;
+    return n * fact(n - 1);
+}
+
+int a(float b) {
+    print(b);
+}
+
+int m() {
+    
+}
